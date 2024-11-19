@@ -52,6 +52,6 @@ brew cask install visual-studio-code
 Once VSCode successfully installs via HomeBrew, you can run the following to install the extensions we'll need:
 
 ```
-curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-macos/main/install-func.sh | /bin/bash
+curl -s https://github.com/ainaimi/vscode-setup-mac/blob/16e42ffb56f7923ffb9d27a1e87758f79104456a/install-func.sh | /bin/bash
 ```
 
