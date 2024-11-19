@@ -46,8 +46,10 @@ or your Terminal emulator, such as iTerm2. Then, if you have not already,  insta
 Once HomeBrew successfully installs, you can run the following code to install VSCode:
 
 ```
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
+
+NB: to get the below to work, user has to install command line interface for VScode within the command shift p opiton
 
 Once VSCode successfully installs via HomeBrew, you can run the following to install the extensions we'll need:
 
