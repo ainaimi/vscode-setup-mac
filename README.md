@@ -2,6 +2,10 @@
 
 [A Windows version of this repo is coming soon]
 
+[This repo was inspired by: https://github.com/karaage0703/vscode-dotfiles]
+
+[This repo is a work in progress]
+
 This repo contains some basic setup instructions and commands for installing Visual Studio Code and select extensions on MacOS. 
 
 One benefit of using VSCode is the availability of the [LiveShare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) extension, which allows two or more people to edit the 
