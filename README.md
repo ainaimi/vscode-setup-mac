@@ -29,7 +29,7 @@ Once these packages are installed, the following tasks need to be carried out:
     - LiveShare
     - R
 
-There are at least two ways to carry out these tasks, but we'll focus on manual installation.[^2] This requires that you
+There are at least two ways to carry out these tasks, but we'll focus on manual installation. This requires that you
 [download and install VSCode](https://code.visualstudio.com/), open it up, and then install the LiveShare and R extensions
 from within your newly installed VSCode. Note this process will work on MacOS and Windows systems. 
 
@@ -99,7 +99,7 @@ Once these steps are complete, we can collaborate on writing R code together.
 
 [^1]: This repo was inspired by https://is.gd/6mtdvD
 
-[^2]: Alternatively, if you are using MacOS, you can use the code in this repository to automate the process. To start, open Terminal
+<!-- [^2]: Alternatively, if you are using MacOS, you can use the code in this repository to automate the process. To start, open Terminal
 or your Terminal emulator, such as iTerm2. Then, if you have not already, install [HomeBrew](https://brew.sh/) by running the following:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -108,4 +108,4 @@ Once HomeBrew successfully installs, you can run the following code to install V
 ```
 brew install --cask visual-studio-code
 ```
-Note that you can get to this point without HomeBrew by simply installing VScode with the "download and install" link above.
+Note that you can get to this point without HomeBrew by simply installing VScode with the "download and install" link above. -->
