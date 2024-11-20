@@ -1,6 +1,6 @@
-# VSCode Setup for MacOS
+# VSCode Setup
 
-This repo[^1] [^2] contains some basic setup instructions and commands for installing Visual Studio Code and select extensions on MacOS. 
+This repo[^1] [^2] contains some basic setup instructions and commands for installing Visual Studio Code and select extensions. 
 
 One benefit of using VSCode is the availability of the [LiveShare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) extension, which allows two or more people to edit the 
 same codefile remotely. To learn more about LiveShare, see [this video](https://youtu.be/A2ceblXTBBc).
@@ -20,6 +20,8 @@ install.packages("languageserver")
 install.packages("httpgd")
 ```
 
+## Install VSCode
+
 Once these packages are installed, the following tasks need to be carried out:
 
 1) Install VSCode
@@ -27,16 +29,66 @@ Once these packages are installed, the following tasks need to be carried out:
     - LiveShare
     - R
 
-## Install VSCode
-
-There are at least two ways to carry out these tasks. First, you can do everything manually. This would require that you
+There are at least two ways to carry out these tasks, but we'll focus on manual installation.[^1] This requires that you
 [download and install VSCode](https://code.visualstudio.com/), open it up, and then install the LiveShare and R extensions
-from within your newly installed VSCode. Note this process will work on MacOS and Windows systems, and *is the simpler option.* 
+from within your newly installed VSCode. Note this process will work on MacOS and Windows systems. 
 
-To make this option work, you may want to familiarize yourself with the [basics of VSCode](https://code.visualstudio.com/docs/introvideos/basics).
-Note that this link has a useful [introductory video](https://youtu.be/B-s71n0dHUk), but there are others.
+You may want to familiarize yourself with the [basics of VSCode](https://code.visualstudio.com/docs/introvideos/basics).
+Note that this link has a useful [introductory video](https://youtu.be/B-s71n0dHUk). This will give you a sense of how the software
+works so you can carry out the next steps.
 
-Alternatively, if you are using MacOS, you can use the code in this repository to automate the process. To start, open Terminal
+If you've successfully installed VSCode, open it up and you should see the "Getting Started" or "Welcome" page, similar to the following:
+
+![Example VSCode Welcome](./vscode_img.png)
+
+Once installed, proceed to the next steps.
+
+## Add VSCode to Command in PATH [optional]
+
+Once you install VSCode, you'll need to open it and perform an operation within VSCode that adds VSCode to your "path." To 
+do this, open VSCode, and then open the Command Palette within VSCode (the shortcut key for this on MacOS is "Command + Shift + P", and 
+on Windows "Ctrl + Shift + P").
+
+With the Command Palette open, type "shell command" and an option in the list that says "Shell Command: Install 'code' command in PATH." 
+should present itself. Select this option, and approve any administrator requests that might arise. 
+
+Successfully running the Shell Command option in the Command Palette will allow you to run VSCode from your command 
+line (Terminal or Terminal Emulator). This step is not required, but will allow you to use the command line tools and funtions associated
+with VS Code, which can be helpful.
+
+## Install Necessary VSCode Extensions
+
+After executing the shell command step, you're ready to install extensions from the command line. If you are working on MacOS, you can do this by 
+copying the following code and running it in your Terminal or Terminal emulator: 
+
+```
+curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-func.sh | /bin/bash
+```
+
+If you are working on a Windows machine, you can do this by copying the following code and running it a Windows command prompt or Powershell:
+
+```
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-func.sh -OutFile install-func.sh
+bash install-func.sh
+```
+
+Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
+The two extensions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
+[R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+
+## Login to GitHub
+
+Once these two extensions are successfully installed, there is one last step you'll need to do, which is to sign into your GitHub account 
+from within VSCode. To do this, click the "Account" icon in VSCode, and you'll be prompted to enter your GitHub username and 
+password. You will, of course, need a [GitHub account](https://github.com/) to do this.
+
+Once these steps are complete, we can collaborate on writing R code together.
+
+
+
+[^1]: This repo was inspired by https://is.gd/6mtdvD
+
+[^2]: Alternatively, if you are using MacOS, you can use the code in this repository to automate the process. To start, open Terminal
 or your Terminal emulator, such as iTerm2. Then, if you have not already, install [HomeBrew](https://brew.sh/) by running the following:
 
 ```
@@ -50,35 +102,3 @@ brew install --cask visual-studio-code
 ```
 
 Note that you can get to this point without HomeBrew by simply installing VScode with the "download and install" link above.
-
-## Add VSCode to Command in PATH
-
-Once you install VSCode, you'll need to open it and perform an operation within VSCode that adds VSCode to your "path." To 
-do this, open VSCode, and then open the Command Palette within VSCode (the shortcut key for this on a mac is "Command + Shift + P")
-
-With the Command Palette open, type "shell command" and an option in the list that says "Shell Command: Install 'code' command in PATH." 
-should present itself. Select this option, and approve any administrator requests that might arise. 
-
-Successfully running the Shell Command option in the Command Palette will allow you to run VSCode from your command line (Terminal or Terminal Emulator).
-
-## Install Necessary VSCode Extensions
-
-Once you successfully run the Shell Command option, you can run the following code to install the extensions we'll need to work together.
-To do this, copy the code and run it in your Terminal or Terminal emulator. 
-
-```
-curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-func.sh | /bin/bash
-```
-
-Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
-The two extensions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
-[R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
-
-Once these two extensions are successfully installed, there is one last step you'll need to do, which is to sign into your GitHub account 
-from within VSCode. To do this, click the "Account" icon in VSCode, and you'll be prompted to enter your GitHub username and 
-password. You will, of course, need a [GitHub account](https://github.com/) to do this.
-
-Once these steps are complete, we can collaborate on writing R code together.
-
-[^1]: Windows version coming soon...
-[^2]: This repo was inspired by https://is.gd/6mtdvD
