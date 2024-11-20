@@ -71,10 +71,8 @@ curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/ma
 ```
 
 Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
-The two exentions you'll need are:
-
-    - [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-    - [R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+The two exentions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
+[R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
 
 Once these two extensions are successfully installed, there is one last step you'll need to do, which is to sign into your GitHub account 
 from within VSCode. To do this, click the "Account" icon in VSCode, and you'll be prompted to enter your GitHub username and 
