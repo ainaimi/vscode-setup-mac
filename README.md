@@ -1,6 +1,6 @@
 # VSCode Setup
 
-This repo[^1] [^2] contains some basic setup instructions and commands for installing Visual Studio Code and select extensions. 
+This repo[^1] contains some basic setup instructions and commands for installing Visual Studio Code and select extensions. 
 
 One benefit of using VSCode is the availability of the [LiveShare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) extension, which allows two or more people to edit the 
 same codefile remotely. To learn more about LiveShare, see [this video](https://youtu.be/A2ceblXTBBc).
@@ -29,7 +29,7 @@ Once these packages are installed, the following tasks need to be carried out:
     - LiveShare
     - R
 
-There are at least two ways to carry out these tasks, but we'll focus on manual installation.[^1] This requires that you
+There are at least two ways to carry out these tasks, but we'll focus on manual installation.[^2] This requires that you
 [download and install VSCode](https://code.visualstudio.com/), open it up, and then install the LiveShare and R extensions
 from within your newly installed VSCode. Note this process will work on MacOS and Windows systems. 
 
@@ -101,15 +101,11 @@ Once these steps are complete, we can collaborate on writing R code together.
 
 [^2]: Alternatively, if you are using MacOS, you can use the code in this repository to automate the process. To start, open Terminal
 or your Terminal emulator, such as iTerm2. Then, if you have not already, install [HomeBrew](https://brew.sh/) by running the following:
-
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
 Once HomeBrew successfully installs, you can run the following code to install VSCode:
-
 ```
 brew install --cask visual-studio-code
 ```
-
 Note that you can get to this point without HomeBrew by simply installing VScode with the "download and install" link above.
