@@ -71,7 +71,7 @@ curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/ma
 ```
 
 Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
-The two exentions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
+The two extensions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
 [R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
 
 Once these two extensions are successfully installed, there is one last step you'll need to do, which is to sign into your GitHub account 
@@ -80,5 +80,5 @@ password. You will, of course, need a [GitHub account](https://github.com/) to d
 
 Once these steps are complete, we can collaborate on writing R code together.
 
-[^1]: Windows version of this repo is coming soon...
+[^1]: Windows version coming soon...
 [^2]: This repo was inspired by https://is.gd/6mtdvD
