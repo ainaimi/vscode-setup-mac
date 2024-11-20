@@ -1,12 +1,6 @@
 # VSCode Setup for MacOS
 
-[A Windows version of this repo is coming soon]
-
-[This repo was inspired by: https://github.com/karaage0703/vscode-dotfiles]
-
-[This repo is a work in progress]
-
-This repo contains some basic setup instructions and commands for installing Visual Studio Code and select extensions on MacOS. 
+This repo[^1] [^2] contains some basic setup instructions and commands for installing Visual Studio Code and select extensions on MacOS. 
 
 One benefit of using VSCode is the availability of the [LiveShare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) extension, which allows two or more people to edit the 
 same codefile remotely. To learn more about LiveShare, see [this video](https://youtu.be/A2ceblXTBBc).
@@ -78,3 +72,6 @@ from within VSCode. To do this, click the "Account" icon in VSCode, and you'll b
 password. You will, of course, need a [GitHub account](https://github.com/) to do this.
 
 Once these steps are complete, we can collaborate on writing R code together.
+
+[^1]: Windows version of this repo is coming soon...
+[^2]: This repo was inspired by https://is.gd/6mtdvD
