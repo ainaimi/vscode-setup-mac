@@ -10,6 +10,8 @@ meeting is in person or remote.
 
 This repo contains some basic instructions and commands to get your computer into a state where we can work together.
 
+## Install R Packages
+
 To get this to work, you'll need to have R already installed on your computer (R version 3.4.0 or later). The first thing 
 you'll need to do is to install some packages in R. To do this, open R as you typically would, and install the following:
 
@@ -24,6 +26,8 @@ Once these packages are installed, the following tasks need to be carried out:
 2) Install necessary VSCode Extensions, including:
     - LiveShare
     - R
+
+## Install VSCode
 
 There are at least two ways to carry out these tasks. First, you can do everything manually. This would require that you
 [download and install VSCode](https://code.visualstudio.com/), open it up, and then install the LiveShare and R extensions
@@ -47,6 +51,8 @@ brew install --cask visual-studio-code
 
 Note that you can get to this point without HomeBrew by simply installing VScode with the "download and install" link above.
 
+## Add VSCode to Command in PATH
+
 Once you install VSCode, you'll need to open it and perform an operation within VSCode that adds VSCode to your "path." To 
 do this, open VSCode, and then open the Command Palette within VSCode (the shortcut key for this on a mac is "Command + Shift + P")
 
@@ -54,6 +60,8 @@ With the Command Palette open, type "shell command" and an option in the list th
 should present itself. Select this option, and approve any administrator requests that might arise. 
 
 Successfully running the Shell Command option in the Command Palette will allow you to run VSCode from your command line (Terminal or Terminal Emulator).
+
+## Install Necessary VSCode Extensions
 
 Once you successfully run the Shell Command option, you can run the following code to install the extensions we'll need to work together.
 To do this, copy the code and run it in your Terminal or Terminal emulator. 
