@@ -59,17 +59,20 @@ with VS Code, which can be helpful.
 ## Install Necessary VSCode Extensions
 
 After executing the shell command step, you're ready to install extensions from the command line. If you are working on MacOS, you can do this by 
-copying the following code and running it in your Terminal or Terminal emulator: 
+copying the following code and running it in your Terminal or Terminal emulator (e.g., iTerm2): 
 
 ```
 curl -s https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-func.sh | /bin/bash
 ```
 
-If you are working on a Windows machine, you can do this by copying the following code and running it a Windows command prompt or Powershell:
+If you are working on a Windows machine, you can do this by copying the following code and running it a Windows Powershell prompt:
 
 ```
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-func.sh -OutFile install-func.sh
-bash install-func.sh
+# Step 1: Download the script
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ainaimi/vscode-setup-mac/refs/heads/main/install-vscode-extensions.ps1" -OutFile "install-vscode-extensions.ps1"
+
+# Step 2: Execute the downloaded script
+.\install-vscode-extensions.ps1
 ```
 
 Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
