@@ -56,7 +56,7 @@ Successfully running the Shell Command option in the Command Palette will allow 
 line (Terminal or Terminal Emulator). This step is not required, but will allow you to use the command line tools and funtions associated
 with VS Code, which can be helpful.
 
-## Install Necessary VSCode Extensions
+## Install VSCode Extensions: Automated Script
 
 After executing the shell command step, you're ready to install extensions from the command line. If you are working on MacOS, you can do this by 
 copying the following code and running it in your Terminal or Terminal emulator (e.g., iTerm2): 
@@ -75,8 +75,18 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ainaimi/vscode-setup-m
 .\install-vscode-extensions.ps1
 ```
 
-Alternatively, you can manually install the extensions via the VSCode Extensions tab (the video above describes how this can be done).
-The two extensions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
+Note that, to get this to work on your Windows PowerShell prompt, you may have to modify some execution policies by running this code:
+
+```
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+and then trying the installation code again.
+
+## Install VSCode Extensions: Manual Installation
+
+Alternatively, instead of using these scripts to install extensions, you can manually install the extensions via the VSCode Extensions 
+tab (the video above describes how this can be done). The two extensions you'll need are: [VS Code Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare); 
 [R Editor Support for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
 
 ## Login to GitHub
@@ -86,8 +96,6 @@ from within VSCode. To do this, click the "Account" icon in VSCode, and you'll b
 password. You will, of course, need a [GitHub account](https://github.com/) to do this.
 
 Once these steps are complete, we can collaborate on writing R code together.
-
-
 
 [^1]: This repo was inspired by https://is.gd/6mtdvD
 
